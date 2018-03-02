@@ -14,7 +14,7 @@
 <html>
 <head>
 
-<link rel="icon" href="{{asset ('img/home/panda2.png')}}">
+<link rel="icon" href="{{asset ('img/home/Panda2.png')}}">
 
 @include('partials.header')
 
