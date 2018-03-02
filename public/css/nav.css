@@ -1,0 +1,55 @@
+*{
+	/*removes default padding and margins*/
+	margin: 0;
+	padding: 0px; 
+	box-sizing: border-box; /*to avoid overflow */
+}
+
+/* Use this protocol when using float*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.brand-logo	> img {
+	width: 25%;
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+nav {
+	background-color: #34515e;
+}
+
+.side-nav li>a {
+	color: #fff;
+	font-weight: bold;
+}
+
+.side-nav {
+	background-color: #34515e;
+}
+
+/*Tablet*/
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+	.brand-logo > img {
+		width: 30%;
+    	margin-top: 2%;
+    	margin-left: 40%;
+	}
+
+}
+
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+	.brand-logo > img {
+		width: 45%;
+	    margin-top: 5%;
+	    margin-left: 35%;
+	    height: 65%;
+	}
+
+}
+

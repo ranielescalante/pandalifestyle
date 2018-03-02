@@ -1,0 +1,188 @@
+*{
+  /*removes default padding and margins*/
+  margin: 0;
+  padding: 0px; 
+  box-sizing: border-box; /*to avoid overflow */
+}
+
+/* Use this protocol when using float*/
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.row .col.s12 h5 {
+    text-align: left!important;
+}
+
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+}
+main {
+   flex: 1 0 auto;
+}
+
+ul, li {
+    list-style: none;
+}
+h5{
+  margin: 0;
+  
+}
+h3,
+h4{
+
+  font-family: 'Monoton', cursive;
+  color: #819ca9;
+  margin: 10px 0px 15px;
+  padding-bottom:10px;
+  padding-left: 10px;
+  border-left: 5px solid #819ca9;
+}
+
+.title,
+.divContent {
+  color: #546e7a;
+  
+}
+
+i.small {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
+
+a {
+  color: #546e7a;
+  font-weight: bold;
+  outline: 0 none;
+  text-decoration: none;
+}
+
+a:hover{ 
+  color: #819ca9;
+}
+
+.adsImage {
+  margin: 2%;
+  margin-left: 0%
+}
+
+.sidebar-thumb img{
+  background: #fff;
+  border: 1px dashed #e0e0e0;
+  padding: 6px;
+  height: 75px;
+  width: 75px;
+  
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.sidebar.widget {
+  background: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+}
+.sidebar.widget ul {
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+.sidebar.widget ul li {
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 20px
+}
+.sidebar-thumb{
+    float: left;
+    overflow: hidden;
+    margin-right: 15px;
+}
+.sidebar-thumb img{
+  background: #fff;
+  border: 1px dashed #e0e0e0;
+  padding: 6px;
+  height: 75px;
+  width: 75px;
+  
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+}
+.sidebar-content h5{ 
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 24px;
+}
+.sidebar-content h5 a:hover{ 
+  color: #819ca9;
+}
+
+.sidebar-content h5 a{ 
+    color: #546e7a;
+    outline: 0 none;
+    text-decoration: none;
+    font-weight: bold
+}
+.sidebar-meta{
+  margin-top: 5px;
+}
+.sidebar-meta span{
+  color: #546e7a;
+}
+.sidebar-meta span.time{
+  margin-right: 10px;
+}
+.sidebar-meta span i{
+  color: #546e7a
+}
+
+select {
+    width: 50%;
+}
+
+/*Tablet*/
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+	img	{
+		background-repeat: no-repeat;
+		background: cover;
+		background-position: center top;
+		position: relative;
+		top: 0%;
+	}
+
+  .adsImage2 > a > img {
+    height: 8%;
+  }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+	img	{
+		background-repeat: no-repeat;
+		background: cover;
+		background-position: center top;
+		position: relative;
+		top: 15%;
+	}
+
+  .adsImage > a > img {
+    height: 44%;
+    margin-left: 1%;
+  }
+
+  .adsImage2 > a > img {
+    height: 6%;
+  }
+  
+  .sidebar-meta {
+      font-size: .8em;
+  }
+}

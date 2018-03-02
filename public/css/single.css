@@ -1,0 +1,79 @@
+*{
+  /*removes default padding and margins*/
+  margin: 0;
+  padding: 0px; 
+  box-sizing: border-box; /*to avoid overflow */
+}
+
+/* Use this protocol when using float*/
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+main {
+ flex: 1 0 auto;
+}
+
+h4 {
+	font-family: 'Monoton', cursive;
+}
+
+main {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+i.large {
+	color: #546e7a;
+}
+
+hr.style4 {
+	border-top: 1px dotted #546e7a;
+
+}
+
+.artContent {
+	margin: 10%;
+	margin-top: 3%;
+}
+
+.commentDiv {
+	margin: 5%; 
+}
+
+.commentBtn {
+	margin: 1%;
+}
+
+
+/*Comments*/
+
+
+/*Tablet*/
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+	img {
+	    height: 35%;
+	}
+	
+}
+
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+	img	{
+		height: 25%;
+	}
+
+	h2 {
+		width: 25%;
+	}
+	
+	
+}
+

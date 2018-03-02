@@ -1,0 +1,120 @@
+*{
+	/*removes default padding and margins*/
+	margin: 0;
+	padding: 0px; 
+	box-sizing: border-box; /*to avoid overflow */
+}
+
+/* Use this protocol when using float*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+body {
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+main {
+ flex: 1 0 auto;
+}
+ 
+main {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.pagination {
+	text-align: center;
+    padding: 5%;
+}
+
+.pagination li.active {
+    background-color: #546e7a;
+}
+
+h2 {
+  font-family: 'Monoton', cursive;
+
+}
+
+h5 a:hover,
+h2{ 
+  color: #819ca9;
+}
+
+h5 a,
+{ 
+    color: #546e7a;
+    outline: 0 none;
+    font-weight: bold; 
+}
+
+a
+{ 
+    color: #546e7a;
+    font-weight: bold; 
+}
+
+b > a {
+	color: #546e7a;
+	text-decoration: none;
+    font-weight: bold;
+	margin: 5%;
+	width: 10%;
+	margin-left: 0%;
+}
+
+.sidebar-meta span{
+  color: #546e7a;
+}
+
+.sidebar-meta span i{
+  color: #546e7a
+}
+
+.artImage{
+	height: 50%;
+}
+
+i.small{
+	color: #546e7a;
+}
+
+.row{
+	margin: 1% 10%;
+	padding: 3%;
+}
+
+.adsImage {
+	margin: 2%;
+}
+
+/*Tablet*/
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+	.adsImage > a > img {
+		height: 18%;
+	}
+
+	.row .col.m6 {
+	    width: 50%;
+	    margin-left: auto;
+	    left: auto;
+	    right: auto;
+	    height: 45%;
+	}
+}
+
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+	.adsImage > a > img{
+		height: 13%;
+	}
+
+	.pagination{
+		width: 	110%%;
+	}
+
+}

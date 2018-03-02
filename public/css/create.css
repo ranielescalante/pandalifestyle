@@ -1,0 +1,45 @@
+*{
+	/*removes default padding and margins*/
+	margin: 0;
+	padding: 0px; 
+	box-sizing: border-box; /*to avoid overflow */
+}
+
+/* Use this protocol when using float*/
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+h1 {
+	font-family: 'Monoton', cursive;
+	color: #546e7a;
+}
+
+.PostBtn {
+	margin: 2%;
+}
+
+body {
+ display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+main {
+ flex: 1 0 auto;
+}
+
+
+
+/*Tablet*/
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+		
+}
+
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+	
+
+}
