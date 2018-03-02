@@ -2,7 +2,7 @@
 
 <nav>
     <div class="nav-wrapper">
-      <a href="{{ url('/home') }}" class="brand-logo" id="brandLogo"><img src="{{asset ('img/home/panda.png')}}"></a>
+      <a href="{{ url('/home') }}" class="brand-logo" id="brandLogo"><img src="{{asset ('img/home/Panda.png')}}"></a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="large material-icons">menu</i></a>
       
       <ul class="right hide-on-med-and-down">
